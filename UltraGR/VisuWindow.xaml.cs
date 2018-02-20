@@ -43,7 +43,7 @@ namespace UltraGR
 
         void button_exit(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Closing... Visu...Waiting..");
+            MessageBox.Show("Closing...");
         }
         void button_test(object sender, RoutedEventArgs e)
         {

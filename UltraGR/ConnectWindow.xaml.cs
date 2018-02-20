@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Windows;
 
 namespace UltraGR
 {
@@ -7,19 +9,41 @@ namespace UltraGR
     /// </summary>
     public partial class ConnectWindow : Window
     {
-        public ConnectWindow()
+        MainWindow mainWindow;
+
+        public ConnectWindow(MainWindow mainWindow)
         {
             InitializeComponent();
-            textBox.Text = "Test123";   
+            this.mainWindow = mainWindow;
+            foreach (String port in GetAllPorts())
+                comboBox.Items.Add(port);
         }
 
-        void button_exit(object sender, RoutedEventArgs e)
+        public List<String> GetAllPorts()
+        {
+            List<String> allPorts = new List<String>();
+            foreach (String portName in System.IO.Ports.SerialPort.GetPortNames())
+            {
+                allPorts.Add(portName);
+            }
+            return allPorts;
+        }
+
+        void buttonCancel_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-        void button_test(object sender, RoutedEventArgs e)
+        void buttonConnect_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Button was clicked.");
+            mainWindow.Port.Close();
+            mainWindow.Port = new System.IO.Ports.SerialPort((String)comboBox.SelectedValue);
+            mainWindow.Port.BaudRate = 921600;
+            mainWindow.Port.StopBits = System.IO.Ports.StopBits.One;
+            mainWindow.Port.Open();
+            mainWindow.Port.Write("h");
+            mainWindow.Port.Write("a");
+            mainWindow.Port.Write("g");
+            this.Close();
         }
     }
 }
