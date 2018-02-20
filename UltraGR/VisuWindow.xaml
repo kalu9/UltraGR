@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:UltraGR"
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="900"
-      Title="Visu">
+      Title="Visualisierung">
 
     <Grid>
         <Label x:Name="label" Content="Visualisierung" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" FontSize="48" Height="80" Width="300"/>

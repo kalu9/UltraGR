@@ -34,8 +34,9 @@ namespace UltraGR
             suicide();
         }
 
-        void button_sponsoren(object sender, RoutedEventArgs e)
+        void button_test_click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Test");
         }
 
         void button_connect(object sender, RoutedEventArgs e)

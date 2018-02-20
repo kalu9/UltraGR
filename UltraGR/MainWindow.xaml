@@ -14,11 +14,11 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <Label Name="label"  Content="Test" HorizontalAlignment="Center" Margin="703,264,145.666,0" VerticalAlignment="Top" Height="33" Width="45" FontSize="14"/>
+        <Label Name="label"  Content="Test" HorizontalAlignment="Center" Margin="5,5,5,5" VerticalAlignment="Center" Height="33" Width="45" FontSize="14"/>
         <Image Name="Logo_UltraGR" HorizontalAlignment="Center" Source="C:\Users\User\source\repos\UltraGR\Data\Logo\UltraGR_Logo_HiRes_v3_Transparent.png"  Height="145" Margin="0,10,0,0" VerticalAlignment="Top" Width="550"/>
         <Button Click="button_visu" HorizontalAlignment="Center"  Width="134" Height="50" VerticalAlignment="Bottom" Content="Visualisierung" Margin="0,0,0,5" FontSize="18"/>
         <Button Click="button_exit" HorizontalAlignment="Right"  Width="134" Height="50" VerticalAlignment="Bottom" Content="Exit" Margin="5,5,5,5" FontSize="18"/>
-        <Button Click="button_sponsoren" HorizontalAlignment="Left"  Width="134" Height="50" VerticalAlignment="Bottom" Content="Sponsoren" Margin="5,5,5,5" FontSize="18"/>
-        <Button Click="button_connect" HorizontalAlignment="Left"  Width="134" Height="50" VerticalAlignment="Top" Content="Einstellungen" Margin="5,5,5,5" FontSize="18"/>
+        <Button Click="button_test_click" HorizontalAlignment="Left"  Width="134" Height="50" VerticalAlignment="Bottom" Content="TEST" Margin="5,5,5,5" FontSize="18"/>
+        <Button Click="button_connect" HorizontalAlignment="Left"  Width="134" Height="50" VerticalAlignment="Top" Content="Verbindung" Margin="5,5,5,5" FontSize="18"/>
     </Grid>
 </Window>

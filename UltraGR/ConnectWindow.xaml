@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Verbindung" Height="300" Width="300">
     <Grid>
-        <Button Click="buttonCancel_Click" HorizontalAlignment="Right"  Width="100" Height="50" VerticalAlignment="Bottom" Content="Abbrechen" Margin="0,0,10,10" FontSize="18"/>
-        <Button Click="buttonConnect_Click" HorizontalAlignment="Right" Width="100" Height="50" VerticalAlignment="Bottom" Content="Verbinden" Margin="0,0,120,10" FontSize="18"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="270"/>
-        <Label x:Name="label" Content="Port auswählen." HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="270"/>
+        <Button Click="buttonCancel_Click" HorizontalAlignment="Right"  Width="100" Height="50" VerticalAlignment="Bottom" Content="Abbrechen" Margin="0,0,5,5" FontSize="18"/>
+        <Button Click="buttonConnect_Click" HorizontalAlignment="Right" Width="100" Height="50" VerticalAlignment="Bottom" Content="Verbinden" Margin="0,0,115,5" FontSize="18"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="5,120,0,0" VerticalAlignment="Top" Width="270"/>
+        <Label x:Name="label" Content="Port auswählen." HorizontalAlignment="Left" Margin="5,80,0,0" VerticalAlignment="Top" Width="270"/>
     </Grid>
 </Window>
