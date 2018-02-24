@@ -8,8 +8,11 @@
         Title="Verbindung" Height="300" Width="300">
     <Grid>
         <Button Click="buttonCancel_Click" HorizontalAlignment="Right"  Width="100" Height="50" VerticalAlignment="Bottom" Content="Abbrechen" Margin="0,0,5,5" FontSize="18"/>
-        <Button Click="buttonConnect_Click" HorizontalAlignment="Right" Width="100" Height="50" VerticalAlignment="Bottom" Content="Verbinden" Margin="0,0,115,5" FontSize="18"/>
+        <Button x:Name="connectButton" Click="buttonConnect_Click" HorizontalAlignment="Right" Width="100" Height="50" VerticalAlignment="Bottom" Content="Verbinden" Margin="0,0,115,5" FontSize="18"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="5,120,0,0" VerticalAlignment="Top" Width="270"/>
         <Label x:Name="label" Content="Port auswählen." HorizontalAlignment="Left" Margin="5,80,0,0" VerticalAlignment="Top" Width="270"/>
+        <Label x:Name="label_baudrate" Content="Baudrate eingeben:" HorizontalAlignment="Left" Margin="5,20,0,0" VerticalAlignment="Top" Width="270"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="120,20,0,0" TextWrapping="Wrap" Text="921600" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>

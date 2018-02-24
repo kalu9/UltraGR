@@ -14,11 +14,18 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <Label Name="label"  Content="Test" HorizontalAlignment="Center" Margin="5,5,5,5" VerticalAlignment="Center" Height="33" Width="45" FontSize="14"/>
+        <Label Name="label"  Content="Status:" HorizontalAlignment="Left" Margin="5,60,5,5" VerticalAlignment="Top" Height="30" Width="80" FontSize="14"/>
+        <Label Name="label_connection_status"  Content="Getrennt" HorizontalAlignment="Left" Margin="65,60,5,5" VerticalAlignment="Top" Height="33" Width="80" FontSize="14" Foreground="Red"/>
+        <Label Name="label1"  Content="Umgebungstemperatur:" HorizontalAlignment="Left" Margin="5,200,5,5" VerticalAlignment="Top" Height="33" Width="160" FontSize="14"/>
+        <Label Name="label_temp"  Content="- °C" HorizontalAlignment="Left" Margin="165,200,5,5" VerticalAlignment="Top" Height="30" Width="160" FontSize="14"/>
+        <Label Name="label2"  Content="Schallgeschwindigkeit:" HorizontalAlignment="Left" Margin="5,235,5,5" VerticalAlignment="Top" Height="30" Width="160" FontSize="14"/>
+        <Label Name="label_sound"  Content="- m/s" HorizontalAlignment="Left" Margin="165,235,5,5" VerticalAlignment="Top" Height="33" Width="160" FontSize="14"/>
         <Image Name="Logo_UltraGR" HorizontalAlignment="Center" Source="C:\Users\User\source\repos\UltraGR\Data\Logo\UltraGR_Logo_HiRes_v3_Transparent.png"  Height="145" Margin="0,10,0,0" VerticalAlignment="Top" Width="550"/>
-        <Button Click="button_visu" HorizontalAlignment="Center"  Width="134" Height="50" VerticalAlignment="Bottom" Content="Visualisierung" Margin="0,0,0,5" FontSize="18"/>
-        <Button Click="button_exit" HorizontalAlignment="Right"  Width="134" Height="50" VerticalAlignment="Bottom" Content="Exit" Margin="5,5,5,5" FontSize="18"/>
-        <Button Click="button_test_click" HorizontalAlignment="Left"  Width="134" Height="50" VerticalAlignment="Bottom" Content="TEST" Margin="5,5,5,5" FontSize="18"/>
-        <Button Click="button_connect" HorizontalAlignment="Left"  Width="134" Height="50" VerticalAlignment="Top" Content="Verbindung" Margin="5,5,5,5" FontSize="18"/>
+        <Button Click="button_visu" HorizontalAlignment="Center"  Width="135" Height="50" VerticalAlignment="Bottom" Content="Visualisierung" Margin="0,0,0,5" FontSize="18"/>
+        <Button Click="button_exit" HorizontalAlignment="Right"  Width="135" Height="50" VerticalAlignment="Bottom" Content="Exit" Margin="5,5,5,5" FontSize="18"/>
+        <Button Click="button_distance_click" HorizontalAlignment="Left"  Width="135" Height="50" VerticalAlignment="Bottom" Content="Distanzmessung" Margin="5,5,5,5" FontSize="18"/>
+        <Button Click="button_connect" HorizontalAlignment="Left"  Width="135" Height="50" VerticalAlignment="Top" Content="Verbindung" Margin="5,5,5,5" FontSize="18"/>
+        <Button Click="button_signalexport_click" HorizontalAlignment="Center"  Width="135" Height="50" VerticalAlignment="Bottom" Content="Signalexport" Margin="0,0,0,180" FontSize="18"/>
+        <Button Click="button_calibration_click" HorizontalAlignment="Right"  Width="135" Height="50" VerticalAlignment="Bottom" Content="Kalibrierung" Margin="5,5,5,180" FontSize="18"/>
     </Grid>
 </Window>
